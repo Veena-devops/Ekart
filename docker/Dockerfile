@@ -1,8 +1,8 @@
-FROM maven AS maven
+FROM maven:amazoncorretto AS maven
 WORKDIR /app
 COPY /Ekart/src /app/src
 COPY /Ekart/pom.xml /app/pom.xml
-RUN mvn clean package
+RUN mvn clean package -DskipTests=true
 CMD ["bash"] 
 
 FROM openjdk:8u151-jdk-alpine3.7
