@@ -16,4 +16,4 @@ EXPOSE 8070
 ENV app /usr/src/app
 COPY --from=stage2 /build/target/shopping-cart-0.0.1-SNAPSHOT.jar $app/app.jar
 WORKDIR $app
-ENTRYPOINT exec java -jar app.jar
+ENTRYPOINT ["exec", "java", "-jar", "$app/app.jar"]
