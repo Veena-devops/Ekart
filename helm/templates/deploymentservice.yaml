@@ -12,6 +12,9 @@ spec:
       labels:
         app: ekart
     spec:
+      serviceAccountName: veena
+      imagePullSecrets:
+        - name: ecr-key
       containers:
         - name: ekart
           image: 791714091301.dkr.ecr.ap-south-1.amazonaws.com/sept-2024
