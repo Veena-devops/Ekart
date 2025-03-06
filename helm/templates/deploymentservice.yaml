@@ -17,7 +17,7 @@ spec:
         - name: ecr-key
       containers:
         - name: ekart
-          image: 791714091301.dkr.ecr.ap-south-1.amazonaws.com/sept-2024
+          image: 791714091301.dkr.ecr.ap-south-1.amazonaws.com/sept-2024:Ekart-example
           command: ["/bin/sh","-c","sleep infinity"]
           imagePullPolicy: Always
           ports:
