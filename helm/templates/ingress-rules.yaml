@@ -13,4 +13,4 @@ spec:
           service:
             name: ekart-ssvc
             port: 
-              number: 8070
+              number: 80
