@@ -35,6 +35,7 @@ spec:
   selector:
     app: ekart
   ports:
-    - port: 80 # The port that the service is running on in the cluster
+    - port: 8070 # The port that the service is running on in the cluster
       targetPort: 8070 # The port exposed by the service
-  type: ClusterIP # type of the service.
+      nodePort: 31000
+  type: Nodeport # type of the service.
