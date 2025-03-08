@@ -12,9 +12,9 @@ spec:
       labels:
         app: ekart
     spec:
-      serviceAccountName: veena
-      imagePullSecrets:
-        - name: ecr-key
+      #serviceAccountName: veena
+      #imagePullSecrets:
+        #- name: ecr-key
       containers:
         - name: ekart
           image: adijaiswal/ekart:latest
